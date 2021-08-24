@@ -1,14 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
+
+  <!--*TITLE*-->
+  <title>УПТР</title>
+
+  <!--*FAVICON*-->
+  <link rel="shortcut icon" href="img/favicon.png"><!-- .ico, .png, .svg, .WebP -->
+
+  <!--*META*-->
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="краткое описание">
+  <meta name="Keywords" content="Ключевые, слова, ключевые слова" />
+  <meta name="author" content="maratabramson@gmail.com" />
+  <meta name="copyright" content="УПТР" />
+
+  <!--Помогаем Google определить месторасположение, а так же другую контактную информацию.-->
+  <meta property="business:contact_data:street_address" content="улица, дом, офис" />
+  <meta property="business:contact_data:locality" content="Город" />
+  <meta property="business:contact_data:postal_code" content="индекс" />
+  <meta property="business:contact_data:country_name" content="Страна" />
+  <meta property="business:contact_data:email" content="name@domain-name.ru" />
+  <meta property="business:contact_data:phone_number" content="+79991234567" />
+  <meta property="business:contact_data:website" content="https://www.site-name.ru/" />
+
+  <!--Open Graph-->
+  <meta name="og:title" content="УПТР" />
+  <meta name="og:type" content="website" />
+  <meta name="og:url" content="https://www.site-url.ru/" />
+  <meta name="og:site_name" content="УПТР" />
+  <meta name="og:description" content="" />
+
+  <meta name="og:email" content="name@domain-name.ru" />
+  <meta name="og:phone_number" content="+79991234567" />
+
+  <meta name="og:street-address" content="улица, дом, оф" />
+  <meta name="og:locality" content="Город" />
+  <meta name="og:region" content="Регион" />
+  <meta name="og:postal-code" content="индекс" />
+  <meta name="og:country-name" content="Страна" />
+
+  <meta property="og:image" content="картинка для preview" /><!-- .svg, .png, .jpg, .WebP -->
+  <meta property="og:image:type" content="image/svg+xml" /><!-- *MIME TYPE* "image/svg+xml", "image/png", "image/jpeg", "image/webp" -->
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+
+
+  <!--*CSS*-->
+
+  <!--*CSS-LIBRARIES*-->
+  <!--UIkit CSS-->
+  <link rel="stylesheet" href="libs/uikit/uikit.min.css">
+
+  <!--main custom-->
+  <link href="css/styles.css" rel="stylesheet">
+
+
+  <!--*JAVA SCRIPT*-->
+
+  <!--*JAVA SCRIPT FRAMEWORKS*-->
+  <!--VUEjs-->
+  <script src="libs/vue/vue.min.js"></script>
+  <!--AXIOS-->
+  <script src="libs/axios/axios.min.js"></script>
+
+  <!--*JAVA SCRIPT LIBRARIES*-->
+  <!--UIkit JS-->
+  <script src="libs/uikit/uikit.min.js"></script>
+
+  <!--*JAVA SCRIPT ICONS*-->
+  <!--*UIkit Icons JS*-->
+  <script src="libs/uikit/uikit-icons.min.js"></script>
+
+  <!-- *MAIN SCRIPT* -->
+  <script defer src="js/app.js"></script>
+
 </head>
+
 <body>
-  <h1>Официальный сайт УПТР</h1>
-  <p>Сайт находится в разработке!</p>
-  
+
+  <div class="site" id="app">
+
+
+    <header class="site__header">
+
+      <div class="site-header__infobar">
+        <div class="site-header__infobar-content u-container">
+          <nav class="site-header__contacts">
+            <a href="mailto:uptr@yandex.ru" class="site-header__contacts-item">
+              uptr@yandex.ru
+            </a>
+            <a href="tel:+79375464047" class="site-header__contacts-item">
+              +7 (937) 546-40-47
+            </a>
+            <a href="mailto:ooo_uptr@mail.ru" class="site-header__contacts-item">
+              ooo_uptr@mail.ru
+            </a>
+            <a href="tel:+79370988457" class="site-header__contacts-item">
+              +7 (937) 098-84-57
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="site-header__mainbar">
+        <div class="site-header__mainbar-content u-container">
+
+          <div class="site-header__brand">
+            <div class="site-header__logo">
+              <img src="img/header__logo.svg" alt="UPTR logotype" class="site-header__logo-pic">
+            </div>
+            <div class="site-header__label">
+              <img src="img/header__UPTR.svg" alt="UPTR label" class="site-header__label-pic">
+            </div>
+          </div>
+
+          <nav class="site-header__navbar">
+            <ul class="site-header__menu">
+              <li class="site-header__menu-item">
+                <a href="#about" class="site-header__menu-link">
+                  О нас
+                </a>
+              </li>
+              <li class="site-header__menu-item">
+                <a href="#about" class="site-header__menu-link">
+                  Услуги
+                </a>
+              </li>
+              <li class="site-header__menu-item">
+                <a href="#about" class="site-header__menu-link">
+                  Сертификаты
+                </a>
+              </li>
+              <li class="site-header__menu-item">
+                <a href="#about" class="site-header__menu-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+    </header>
+    <!--/.site-header-->
+
+
+    <div class="site__body">
+
+      <div class="site-row">
+
+        <div class="site-content">
+
+          <div class="page">
+
+            <div class="page-header">
+
+
+            </div>
+            <!--/.page-header-->
+
+            <div class="page-body">
+
+              <div class="page-row">
+
+                <div class="page-content">
+
+                  <!-----------------
+                    -----------------
+                    page content here
+                    -----------------
+                    ----------------->
+
+                </div>
+                <!--/.page-body-->
+
+              </div>
+              <!--/.page-row-->
+
+            </div>
+            <!--/.page-content-->
+
+            <div class="page-footer">
+
+            </div>
+            <!--/.page-footer-->
+
+          </div>
+          <!--/.page-->
+
+        </div>
+        <!--/.site-content-->
+
+      </div>
+      <!--/.site-row-->
+
+    </div>
+    <!--/.site-body-->
+
+
+    <footer class="site__footer">
+
+    </footer>
+    <!--/.site__footer-->
+
+  </div>
+  <!--/.site-->
+
+  <!--SCRIPTS-->
+  <!--/SCRIPTS-->
+
 </body>
+
 </html>
