@@ -320,8 +320,9 @@ body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	padding: 80px 16px 16px;
+	padding: 64px 16px;
 	background-image: url('../img/section-noise.png'), radial-gradient(100% 100% at 50% 0%, hsla(215, 55%, 50%, 1) 0%, hsla(215, 56%, 30%, 1) 100%);
 }
 
@@ -330,6 +331,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+	margin: 0;
 	padding: 16px;
 }
 
@@ -346,6 +348,7 @@ body {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 18px;
 	color: hsla(217, 52%, 95%, 0.75);
 	text-transform: uppercase;
 }
@@ -484,7 +487,7 @@ body {
 }
 
 .page-item:first-child .page-item__bg {
-	min-height: calc(100vh - 144px);
+	min-height: calc(100vh - 96px);
 }
 
 .page-item__bg {
@@ -659,13 +662,13 @@ body {
 
 .intro__title {
 	padding-bottom: 0;
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 700;
 	color: #BAE85F;
 }
 
 .intro__text {
-	font-size: 20px;
+	font-size: 16px;
 	color: #FFFFFF;
 }
 
@@ -674,6 +677,42 @@ body {
 
 
 /* UTILITARY { */
+.u-scroll-top {
+	cursor: pointer;
+	pointer-events: all;
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+	height: 40px;
+	width: 40px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #224577;
+	border-radius: 100%;
+	background-color: hsla(217, 52%, 75%, 0.75);
+	z-index: 1;
+	transition: opacity 0.4s ease;
+}
+
+.u-scroll-top:hover {
+	color: #FFFFFF;
+}
+
+.u-scroll-top:focus {
+	color: #FFFFFF;
+}
+
+
+a.uk-totop:not(.uk-active) {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  pointer-events: none;
+}
+a.uk-totop.uk-active {
+  opacity: 1;
+}
+
 .u-text--upcase {
 	text-transform: uppercase;
 }
@@ -716,12 +755,21 @@ body {
 		margin: 0 32px;
 	}
 
+	.mob-site__menu-link,
+	.mob-site__contacts-link {
+		font-size: 24px;
+	}
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 960px) {
 
 	p {
 		font-size: 16px;
+	}
+
+	.page-item:first-child .page-item__bg {
+		min-height: calc(100vh - 144px);
 	}
 
 	.site-header__mainbar-content {

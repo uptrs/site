@@ -86,7 +86,7 @@
   <div class="site" id="app">
 
 
-    <header class="site__header">
+    <header class="site__header" id="top">
 
       <div class="site-header__infobar uk-visible@m">
         <div class="site-header__infobar-content u-container">
@@ -112,7 +112,7 @@
         <a class="site-header__mobile-nav-btn uk-hidden@m" href="#mob-menu" uk-toggle>
           <svg class="u-btn__icon" width="40" height="40">
             <use xlink:href="/img/icons/remix-icons-line-system-menu-5-line.svg#icon-menu"></use>
-          </svg> 
+          </svg>
         </a>
 
         <div class="site-header__mainbar-content u-container">
@@ -211,7 +211,8 @@
                           </p>
                         </div>
                         <div class="page-item__content-media uk-width-1-1\@s uk-width-1-3@m">
-                          <img class="page-item__content-img uk-width" src="img/Energy-complex.png" alt="схема гидро-турбины">
+                          <img class="page-item__content-img uk-width" src="img/Energy-complex.png"
+                            alt="схема гидро-турбины">
                         </div>
                       </div>
 
@@ -364,7 +365,8 @@
                         </div>
 
                         <div class="page-item__content-media uk-width-1-3@m">
-                          <img class="page-item__content-img uk-width" src="img/Energy-complex-2.png" alt="схема гидро-турбины">
+                          <img class="page-item__content-img uk-width" src="img/Energy-complex-2.png"
+                            alt="схема гидро-турбины">
                         </div>
 
                       </div>
@@ -374,7 +376,7 @@
                 </div>
               </section>
 
-              <section id="item-sertificates" class="page-item page-item">
+              <section id="item-sertificates" class="page-item">
                 <div class="page-item__bg">
                   <div class="page-item__body u-container">
                     <div class="page-item__content">
@@ -560,64 +562,77 @@
   <!-- OVERLAYS -->
   <div id="mob-menu" class="uk-modal-full uk-hidden@m" uk-modal>
     <div class="uk-modal-dialog uk-height-1-1">
-        <button class="site-header__mobile-nav-btn uk-modal-close-full" type="button" uk-close>
-          <svg class="u-btn__icon" width="40" height="40">
-            <use xlink:href="/img/icons/remix-icons-line-system-menu-5-line.svg#icon-menu"></use>
-          </svg> 
-        </button>
-        <div class="mob-site__nav-content uk-grid-collapse uk-flex-middle" uk-grid>
-          <nav class="mob-site__nav">
-            <ul class="mob-site__menu">
-              <li class="mob-site__menu-item">
-                <a href="#item-about" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                  О нас
-                </a>
-              </li>
-              <li class="mob-site__menu-item">
-                <a href="#item-services" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                  Услуги
-                </a>
-              </li>
-              <li class="mob-site__menu-item">
-                <a href="#item-sertificates" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                  Сертификаты
-                </a>
-              </li>
-              <li class="mob-site__menu-item">
-                <a href="#item-contacts" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                  Контакты
-                </a>
-              </li>
-            </ul>
-            <ul class="mob-site__contacts">
-              <li class="mob-site__contacts-item">
-                <a href="mailto:uptr@yandex.ru" class="mob-site__contacts-link">
-                  uptr@yandex.ru
-                </a>
-              </li>
-              <li class="mob-site__contacts-item">
-                <a href="tel:+79375464047" class="mob-site__contacts-link">
-                  +7 (937) 546-40-47
-                </a>
-              </li>
-              <li class="mob-site__contacts-item">
-                <a href="mailto:ooo_uptr@mail.ru" class="mob-site__contacts-link">
-                  ooo_uptr@mail.ru
-                </a>
-              </li>
-              <li class="mob-site__contacts-item">
-                <a href="tel:+79370988457" class="mob-site__contacts-link">
-                  +7 (937) 098-84-57
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <button class="site-header__mobile-nav-btn uk-modal-close-full" type="button" uk-close>
+        <svg class="u-btn__icon" width="40" height="40">
+          <use xlink:href="/img/icons/remix-icons-line-system-menu-5-line.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mob-site__nav-content uk-grid-collapse uk-flex-middle" uk-grid>
+        <nav class="mob-site__nav">
+          <ul class="mob-site__menu">
+            <li class="mob-site__menu-item">
+              <a href="#item-about" class="mob-site__menu-link uk-modal-close" uk-scroll>
+                О нас
+              </a>
+            </li>
+            <li class="mob-site__menu-item">
+              <a href="#item-services" class="mob-site__menu-link uk-modal-close" uk-scroll>
+                Услуги
+              </a>
+            </li>
+            <li class="mob-site__menu-item">
+              <a href="#item-sertificates" class="mob-site__menu-link uk-modal-close" uk-scroll>
+                Сертификаты
+              </a>
+            </li>
+            <li class="mob-site__menu-item">
+              <a href="#item-contacts" class="mob-site__menu-link uk-modal-close" uk-scroll>
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-site__contacts">
+            <li class="mob-site__contacts-item">
+              <a href="mailto:uptr@yandex.ru" class="mob-site__contacts-link">
+                uptr@yandex.ru
+              </a>
+            </li>
+            <li class="mob-site__contacts-item">
+              <a href="tel:+79375464047" class="mob-site__contacts-link">
+                +7 (937) 546-40-47
+              </a>
+            </li>
+            <li class="mob-site__contacts-item">
+              <a href="mailto:ooo_uptr@mail.ru" class="mob-site__contacts-link">
+                ooo_uptr@mail.ru
+              </a>
+            </li>
+            <li class="mob-site__contacts-item">
+              <a href="tel:+79370988457" class="mob-site__contacts-link">
+                +7 (937) 098-84-57
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-</div>
+  </div>
+
+  <a href="#top" uk-totop uk-scroll="offset: 2000px;" class="u-scroll-top" title="на верх"></a>
   <!-- /OVERLAYS -->
 
   <!--SCRIPTS-->
+  <script>
+    var util = UIkit.util;
+    window.addEventListener("scroll", function () {
+      var totop = util.$("a.uk-totop");
+      if (window.pageYOffset > window.innerHeight) {
+        util.addClass(totop, "uk-active");
+      } else {
+        util.removeClass(totop, "uk-active");
+      }
+    }, false);
+  </script>
   <!--/SCRIPTS-->
 
 </body>
