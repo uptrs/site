@@ -8,7 +8,7 @@ new Vue({
 
   mounted() {
     axios
-      .get('../data/certificates.json')
+      .get('data/certificates.json')
       .then(response => (this.certificates = response.data));
   },
 })
