@@ -14,7 +14,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Все виды водолазных работ">
-	<meta name="Keywords" content="подводное, водолазное, подводная сварка, водолазное обслуживание, водолазные работы, подъём из воды, монтаж под водой" />
+	<meta name="Keywords"
+		content="подводное, водолазное, подводная сварка, водолазное обслуживание, водолазные работы, подъём из воды, монтаж под водой" />
 	<meta name="author" content="ООО «Управление подводно – технических работ»" />
 	<meta name="copyright" content="УПТР" />
 
@@ -50,552 +51,688 @@
 	<meta property="og:image:height" content="512" />
 
 
-  <!--*CSS*-->
+	<!--*CSS*-->
 
-  <!--*CSS-LIBRARIES*-->
-  <!--UIkit CSS-->
-  <link rel="stylesheet" href="libs/uikit/uikit.min.css">
+	<!--*CSS-LIBRARIES*-->
+	<!--UIkit CSS-->
+	<link rel="stylesheet" href="libs/uikit/uikit.min.css">
 
 
-  <!--*JAVA SCRIPT*-->
+	<!--*JAVA SCRIPT*-->
 
-  <!--*JAVA SCRIPT FRAMEWORKS*-->
-  <!--VUEjs-->
-  <script src="libs/vue/vue.min.js"></script>
-  <!--AXIOS-->
-  <script src="libs/axios/axios.min.js"></script>
+	<!--*JAVA SCRIPT FRAMEWORKS*-->
+	<!--VUEjs-->
+	<script src="libs/vue/vue.min.js"></script>
+	<!--AXIOS-->
+	<script src="libs/axios/axios.min.js"></script>
 
-  <!--*JAVA SCRIPT LIBRARIES*-->
-  <!--UIkit JS-->
-  <script src="libs/uikit/uikit.min.js"></script>
+	<!--*JAVA SCRIPT LIBRARIES*-->
+	<!--UIkit JS-->
+	<script src="libs/uikit/uikit.min.js"></script>
 
-  <!--*JAVA SCRIPT ICONS*-->
-  <!--*UIkit Icons JS*-->
-  <script src="libs/uikit/uikit-icons.min.js"></script>
+	<!--*JAVA SCRIPT ICONS*-->
+	<!--*UIkit Icons JS*-->
+	<script src="libs/uikit/uikit-icons.min.js"></script>
 
-  <!-- *MAIN SCRIPT* -->
-  <script defer src="js/app.js"></script>
+	<!-- *MAIN SCRIPT* -->
+	<script defer src="js/app.js"></script>
 
-  <!--main custom-->
-  <link href="css/styles.css" rel="stylesheet">
+	<!--main custom-->
+	<link href="css/styles.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="site" id="app">
+	<div class="site" id="app">
 
 
-    <header class="site__header" id="top">
+		<header class="site__header" id="top">
 
-      <div class="site-header__infobar uk-visible@m">
-        <div class="site-header__infobar-content u-container">
-          <nav class="site-header__contacts">
-            <a href="mailto:uptr@yandex.ru" class="site-header__contacts-item">
-              uptr@yandex.ru
-            </a>
-            <a href="tel:+79375464047" class="site-header__contacts-item">
-              +7 (937) 546-40-47
-            </a>
-            <a href="mailto:ooo_uptr@mail.ru" class="site-header__contacts-item">
-              ooo_uptr@mail.ru
-            </a>
-            <a href="tel:+79370988457" class="site-header__contacts-item">
-              +7 (937) 098-84-57
-            </a>
-          </nav>
-        </div>
-      </div>
+			<div class="site-header__infobar uk-visible@m">
+				<div class="site-header__infobar-content u-container">
+					<nav class="site-header__contacts">
+						<a href="mailto:uptr@yandex.ru" class="site-header__contacts-item">
+							uptr@yandex.ru
+						</a>
+						<a href="tel:+79375464047" class="site-header__contacts-item">
+							+7 (937) 546-40-47
+						</a>
+						<a href="mailto:ooo_uptr@mail.ru" class="site-header__contacts-item">
+							ooo_uptr@mail.ru
+						</a>
+						<a href="tel:+79370988457" class="site-header__contacts-item">
+							+7 (937) 098-84-57
+						</a>
+					</nav>
+				</div>
+			</div>
 
-      <div class="site-header__mainbar">
+			<div class="site-header__mainbar">
 
-        <a class="site-header__mobile-nav-btn uk-hidden@m" href="#mob-menu" uk-toggle>
-          <svg class="u-btn__icon" width="40" height="40">
-            <use xlink:href="img/icons/menu.svg#icon-menu"></use>
-          </svg>
-        </a>
+				<a class="site-header__mobile-nav-btn uk-hidden@m" href="#mob-menu" uk-toggle>
+					<svg class="u-btn__icon" width="40" height="40">
+						<use xlink:href="img/icons/menu.svg#icon-menu"></use>
+					</svg>
+				</a>
 
-        <div class="site-header__mainbar-content u-container">
+				<div class="site-header__mainbar-content u-container">
 
-          <div class="site-header__brand">
-            <div class="site-header__logo">
-              <img src="img/header__logo.svg" alt="UPTR logotype" class="site-header__logo-pic">
-            </div>
-            <div class="site-header__label">
-              <img src="img/header__UPTR.svg" alt="UPTR label" class="site-header__label-pic">
-            </div>
-          </div>
+					<div class="site-header__brand">
+						<div class="site-header__logo">
+							<img src="img/header__logo.svg" alt="UPTR logotype" class="site-header__logo-pic">
+						</div>
+						<div class="site-header__label">
+							<img src="img/header__UPTR.svg" alt="UPTR label" class="site-header__label-pic">
+						</div>
+					</div>
 
-          <nav class="site-header__navbar uk-visible@m">
-            <ul class="site-header__menu">
-              <li class="site-header__menu-item">
-                <a href="#item-about" class="site-header__menu-link" uk-scroll>
-                  О нас
-                </a>
-              </li>
-              <li class="site-header__menu-item">
-                <a href="#item-services" class="site-header__menu-link" uk-scroll>
-                  Услуги
-                </a>
-              </li>
-              <li class="site-header__menu-item">
-                <a href="#item-sertificates" class="site-header__menu-link" uk-scroll>
-                  Сертификаты
-                </a>
-              </li>
-              <li class="site-header__menu-item">
-                <a href="#item-contacts" class="site-header__menu-link" uk-scroll>
-                  Контакты
-                </a>
-              </li>
-            </ul>
-          </nav>
+					<nav class="site-header__navbar uk-visible@m">
+						<ul class="site-header__menu">
+							<li class="site-header__menu-item">
+								<a href="#item-about" class="site-header__menu-link" uk-scroll>
+									О нас
+								</a>
+							</li>
+							<li class="site-header__menu-item">
+								<a href="#item-services" class="site-header__menu-link" uk-scroll>
+									Услуги
+								</a>
+							</li>
+							<li class="site-header__menu-item">
+								<a href="#item-sertificates" class="site-header__menu-link" uk-scroll>
+									Сертификаты
+								</a>
+							</li>
+							<li class="site-header__menu-item">
+								<a href="#item-contacts" class="site-header__menu-link" uk-scroll>
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
 
-        </div>
-      </div>
+				</div>
+			</div>
 
-    </header>
-    <!--/.site-header-->
-
-
-    <main class="site__body">
-
-      <div class="site__content">
-
-        <div class="page">
-
-          <div class="page__body">
-
-            <div class="page__content">
-
-              <section class="page-item page-item--hero">
-                <div class="page-item__bg">
-                  <div class="page-item__body u-container">
-                    <div class="page-item__content page-item__content--hero">
-                      <h2 class="hero-lead">
-                        Все виды
-                        <br>
-                        водолазных работ
-                      </h2>
-                      <div class="intro">
-                        <h2 class="intro__title">
-                          Более 50-ти лет опыта
-                        </h2>
-                        <p class="intro__text">
-                          Техническое обслуживание, ремонт и строительство гидротехнических сооружений для тепловых, атомных и гидроэлектростанций.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="item-about" class="page-item">
-                <div class="page-item__bg">
-                  <div class="page-item__body u-container">
-                    <div class="page-item__content">
-                      <h2 class="page-item__title">
-                        О нас
-                      </h2>
-                      <div class="page-item__content-card uk-grid-match uk-grid-small">
-                        <div class="page-item__text-set uk-width-2-3@m">
-                          <p class="page-item__leadtext">
-                            ООО «Управление подводно – технических работ» является специализированным предприятием по производству подводно – технических (водолазных) работ на любых гидротехнических сооружениях.
-                          </p>
-                          <p class="page-item__text">
-                            ООО «УПТР» на протяжении более 50 лет осуществляет такие виды работ как техническое обслуживание, ремонт и строительство гидротехнических сооружений для тепловых, атомных и гидроэлектростанций.
-                          </p>
-                          <p class="page-item__text">
-                            Предприятие располагает водолазным снаряжением, инструментами для выполнения рфзличных видов работ.
-                          </p>
-                        </div>
-                        <div class="page-item__content-media uk-width-1-1\@s uk-width-1-3@m">
-                          <img class="page-item__content-img uk-width" src="img/Energy-complex.png"
-                            alt="схема гидро-турбины">
-                        </div>
-                      </div>
-
-                      <div class="page-item__content-list">
-                        <h3 class="page-item__subtitle tg-accent--strong">
-                          Только за последние 5 лет силами ООО «УПТР» были выполнены подводно-технические работы
-                          на следующих объектах:
-                        </h3>
-                        <ul class="page-item__list page-item--multicol-2 page-item__list--unstyled">
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Атомные электростанции:
-                            </span>
-                            <p>
-                              Курская АЭС, Смоленская АЭС, Калининская АЭС, Ленинградская АЭС, Ростовская АЭС;
-                            </p>
-                          </li>
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Тепловые электростанции:
-                            </span>
-                            <p>
-                              Сургутская ГРЭС-1, Сургутская ГРЭС-2, Нижневартовская ГРЭС, Ставропольская ГРЭС, Рязанская ГРЭС, Череповецкая ГРЭС, Новочеркасская ГРЭС, Шатурская ГРЭС, Конаковская ГРЭС, Орловская ТЭЦ, Безымянская ТЭЦ.
-                            </p>
-                          </li>
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Водоканалы:
-                            </span>
-                            <p>
-                              АО «Мосводоканал», МУП «Горводоканал г.Волгограда», водоканал г.Ленинска, водоканал г.Волжский, водоканал п.Средняя Ахтуба, ООО «Концессии водоснабжения», ООО «Самарские коммунальные системы».
-                            </p>
-                          </li>
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Гидроэлектростанции:
-                            </span>
-                            <p>
-                              Кривопорожская ГЭС, Путкинская ГРЭС, Подужемская ГЭС, Юшкозерская ГЭС, Лесогорская ГЭС, Светогорская ГЭС, Широковская ГЭС.
-                            </p>
-                          </li>
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Нефтеперерабатывающие заводы:
-                            </span>
-                            <p>
-                              Новокуйбышевский НПЗ, Сызранский НПЗ.
-                            </p>
-                          </li>
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Газораспределительные системы:
-                            </span>
-                            <p>
-                              Кривопорожская ГЭС, Путкинская ГРЭС, Подужемская ГЭС, Юшкозерская ГЭС, Лесогорская ГЭС, Светогорская ГЭС, Широковская ГЭС.
-                            </p>
-                          </li>
-                          <li class="page-item__list-item">
-                            <span class="page-item__list-label">Прочие:
-                            </span>
-                            <p>
-                              Берегоукрепление Волго – Донского судоходного канала насосной станции №31, №32, шлюз №7; АО «Каустик» очистка от отложений (4 группа грунта) действующего главного ливневого коллектора.
-                            </p>
-                          </li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="item-services" class="page-item">
-                <div class="page-item__bg">
-                  <div class="page-item__body u-container">
-                    <div class="page-item__content">
-                      <h2 class="page-item__title">
-                        Услуги
-                      </h2>
-
-                      <div class="page-item__content-card uk-grid-match uk-grid-small">
-                        <div class="page-item__text-set uk-width-2-3@m">
-                          <ul class="page-item__list page-item__list--custom">
-                            <li class="page-item__list-item">
-                              Водолазное обслуживание АЭС, ГЭС, ГРЭС, ТЭЦ.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Водолазное обследование гидросооружений, трубопроводов, речных и морских акваторий при помощи ГБО, ТНПА, Эхолота, толщиномера и т.д.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Водолазное сопровождение строительства гидросооружений.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Дноуглубительные, дноочистные работы.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Подводное бетонирование, в том числе ремонт бетонных поверхностей ГТС в зоне переменного уровня воды
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Тщательное и весьма тщательное равнение постелей.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Монтаж и демонтаж различных конструкций под водой.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Пробивка окон в каменных и бетонных поверхностях.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Подъём из под воды различных предметов: бревен; топляков и т.д.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Очистка акваторий от мусора и наносов грунта.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Очистка колодцев, ёмкостей, отстойников от отложений.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Прокладка дюкеров и кабелей, устранение провисов и размывов.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Подводная сварка и резка металла.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Подводная фото – видеосъёмка.
-                            </li>
-
-                            <li class="page-item__list-item">
-                              Берегоукрепление и дноукрепление с использованием габионных конструкций и матов Рено.
-                            </li>
-
-                          </ul>
-
-                        </div>
-
-                        <div class="page-item__content-media uk-width-1-3@m">
-                          <img class="page-item__content-img uk-width" src="img/Energy-complex-2.png"
-                            alt="схема гидро-турбины">
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="item-sertificates" class="page-item">
-                <div class="page-item__bg">
-                  <div class="page-item__body u-container">
-                    <div class="page-item__content">
-                      <h2 class="page-item__title">
-                        Сертификаты и допуски
-                      </h2>
-
-                      <ul class="page-item__list page-item--multicol-2 page-item__list--unstyled">
-
-                        <li
-                        class="page-item__list-item"
-                        v-for="(item, index) in certificates" :key="item"
-                        >
-                          <h3 class="page-item__subtitle tg-base--weak">
-                            {{ item.type }}
-                          </h3>
-                          <p>
-                            {{ item.description }}
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="item-contacts" class="page-item">
-                <div class="page-item__bg">
-                  <div class="page-item__body u-container">
-                    <div class="page-item__content">
-                      <h2 class="page-item__title">
-                        Контакты
-                      </h2>
-
-                      <p class="page-item__text u-text--upcase u-text--limit u-mb-2">
-                        Общество с ограниченной ответственностью «Управление подводно –технических работ» (ООО «УПТР»)
-                      </p>
-
-                      <ul class="page-item__list page-item--multicol-3 page-item__list--unstyled">
-
-                        <li class="page-item__list-item">
-                          <h3 class="page-item__subtitle tg-base--strong u-text--upcase">
-                            Адрес
-                          </h3>
-                          <p class="tg-base--strong">
-                            404130, Волгоградская область, город Волжский, улица 7–я Автодорога, стр. 3.
-                          </p>
-                        </li>
-
-                        <li class="page-item__list-item">
-                          <h3 class="page-item__subtitle tg-base--strong u-text--upcase">
-                            Телефон
-                          </h3>
-                          <ul class="page-item__list page-item__list--unstyled">
-                            <li>
-                              <a href="tel:+79375464047" class="u-btn u-btn--text-base u-text--upcase">
-                                +7 (937) 546-40-47
-                              </a>
-                            </li>
-                            <li>
-                              <a href="tel:+79370988457" class="u-btn u-btn--text-base u-text--upcase">
-                                +7 (937) 098-84-57
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li class="page-item__list-item">
-                          <h3 class="page-item__subtitle tg-base--strong u-text--upcase">
-                            E-Mail
-                          </h3>
-                          <ul class="page-item__list page-item__list--unstyled">
-                            <li>
-                              <a href="mailto:uptr@yandex.ru" class="u-btn u-btn--text-base u-text--upcase">
-                                uptr@yandex.ru
-                              </a>
-                            </li>
-                            <li>
-                              <a href="mailto:ooo_uptr@mail.ru" class="u-btn u-btn--text-base u-text--upcase">
-                                ooo_uptr@mail.ru
-                              </a>
-                            </li>
-                          </ul>
-
-                        </li>
-
-                      </ul>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-            </div>
-            <!--/.page-body-->
-
-          </div>
-          <!--/.page-content-->
-
-        </div>
-        <!--/.page-->
-
-      </div>
-      <!--/.site-content-->
-
-  </div>
-  <!--/.site-body-->
+		</header>
+		<!--/.site-header-->
 
 
-  <footer class="site__footer">
-    <div class="site-footer__content u-container">
+		<main class="site__body">
 
-      <section class="site-footer__item">
-        <div class="site-footer__img-box">
-          <img class="site-footer__logo" src="img/footer__logo.svg" alt="UPTR logotype">
-          <img class="site-footer__label" src="img/footer__UPTR.svg" alt="UPTR label">
-        </div>
-      </section>
+			<div class="site__content">
 
-      <section class="site-footer__item">
-        <h2 class="site-footer__title tg-base--strong">
-          Документы
-        </h2>
-        <nav class="site-footer__menu">
-          <a href="#" class="site-footer__menu-link u-btn u-btn--text-base">
-            Пользовательское соглашение
-          </a>
-        </nav>
-      </section>
+				<div class="page">
 
-      <section class="site-footer__item">
-        <div class="site-footer__item-unit">
-          <h2 class="site-footer__title tg-base--strong">
-            Copyright
-          </h2>
-          <p class="site-footer__item-text tg-base--strong u-mb-0">
-            2021. ООО «УПТР»
-          </p>
-        </div>
-        <div class="site-footer__item-unit">
-          <h2 class="site-footer__title tg-base--strong">
-            Designed&created
-          </h2>
-          <a href="mailto:maratabramson@gmail.com" class="site-footer__img-box">
-            <img src="img/Studioma-logo.svg" alt="Studioma dev.bureau logotype">
-          </a>
-        </div>
-      </section>
+					<div class="page__body">
+
+						<div class="page__content">
+
+							<section class="page-item page-item--hero">
+								<div class="page-item__bg">
+									<div class="page-item__body u-container">
+										<div class="page-item__content page-item__content--hero">
+											<h2 class="hero-lead">
+												Все виды
+												<br>
+												водолазных работ
+											</h2>
+											<div class="intro">
+												<h2 class="intro__title">
+													Более 50-ти лет опыта
+												</h2>
+												<p class="intro__text">
+													Техническое обслуживание, ремонт и строительство гидротехнических сооружений для тепловых,
+													атомных и гидроэлектростанций.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section id="item-about" class="page-item">
+								<div class="page-item__bg">
+									<div class="page-item__body u-container">
+										<div class="page-item__content">
+											<h2 class="page-item__title">
+												О нас
+											</h2>
+											<div class="page-item__content-card uk-grid-match uk-grid-small">
+												<div class="page-item__text-set uk-width-2-3@m">
+													<p class="page-item__leadtext">
+														ООО «Управление подводно – технических работ» является специализированным предприятием по
+														производству подводно – технических (водолазных) работ на любых гидротехнических
+														сооружениях.
+													</p>
+													<p class="page-item__text">
+														ООО «УПТР» на протяжении более 50 лет осуществляет такие виды работ как техническое
+														обслуживание, ремонт и строительство гидротехнических сооружений для тепловых, атомных и
+														гидроэлектростанций.
+													</p>
+													<p class="page-item__text">
+														Предприятие располагает водолазным снаряжением, инструментами для выполнения рфзличных видов
+														работ.
+													</p>
+												</div>
+												<div class="page-item__content-media uk-width-1-1\@s uk-width-1-3@m">
+													<img class="page-item__content-img uk-width" src="img/Energy-complex.png"
+														alt="схема гидро-турбины">
+												</div>
+											</div>
+
+											<div class="page-item__content-list">
+												<h3 class="page-item__subtitle tg-accent--strong">
+													Только за последние 5 лет силами ООО «УПТР» были выполнены подводно-технические работы
+													на следующих объектах:
+												</h3>
+												<ul class="page-item__list page-item--multicol-2 page-item__list--unstyled">
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Атомные электростанции:
+														</span>
+														<p>
+															Курская АЭС, Смоленская АЭС, Калининская АЭС, Ленинградская АЭС, Ростовская АЭС;
+														</p>
+													</li>
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Тепловые электростанции:
+														</span>
+														<p>
+															Сургутская ГРЭС-1, Сургутская ГРЭС-2, Нижневартовская ГРЭС, Ставропольская ГРЭС, Рязанская
+															ГРЭС, Череповецкая ГРЭС, Новочеркасская ГРЭС, Шатурская ГРЭС, Конаковская ГРЭС, Орловская
+															ТЭЦ, Безымянская ТЭЦ.
+														</p>
+													</li>
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Водоканалы:
+														</span>
+														<p>
+															АО «Мосводоканал», МУП «Горводоканал г.Волгограда», водоканал г.Ленинска, водоканал
+															г.Волжский, водоканал п.Средняя Ахтуба, ООО «Концессии водоснабжения», ООО «Самарские
+															коммунальные системы».
+														</p>
+													</li>
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Гидроэлектростанции:
+														</span>
+														<p>
+															Кривопорожская ГЭС, Путкинская ГЭС, Подужемская ГЭС, Юшкозерская ГЭС, Лесогорская ГЭС,
+															Светогорская ГЭС, Широковская ГЭС.
+														</p>
+													</li>
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Нефтеперерабатывающие заводы:
+														</span>
+														<p>
+															Новокуйбышевский НПЗ, Сызранский НПЗ.
+														</p>
+													</li>
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Газораспределительные системы:
+														</span>
+														<p>
+															Кривопорожская ГЭС, Путкинская ГЭС, Подужемская ГЭС, Юшкозерская ГЭС, Лесогорская ГЭС,
+															Светогорская ГЭС, Широковская ГЭС.
+														</p>
+													</li>
+													<li class="page-item__list-item">
+														<span class="page-item__list-label">Прочие:
+														</span>
+														<p>
+															Берегоукрепление Волго – Донского судоходного канала насосной станции №31, №32, шлюз №7;
+															АО «Каустик» очистка от отложений (4 группа грунта) действующего главного ливневого
+															коллектора.
+														</p>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section id="item-services" class="page-item">
+								<div class="page-item__bg">
+									<div class="page-item__body u-container">
+										<div class="page-item__content">
+											<h2 class="page-item__title">
+												Услуги
+											</h2>
+
+											<div class="page-item__content-card uk-grid-match uk-grid-small">
+												<div class="page-item__text-set uk-width-2-3@m">
+													<ul class="page-item__list page-item__list--custom">
+														<li class="page-item__list-item">
+															Водолазное обслуживание АЭС, ГЭС, ГРЭС, ТЭЦ.
+														</li>
+
+														<li class="page-item__list-item">
+															Водолазное обследование гидросооружений, трубопроводов, речных и морских акваторий при
+															помощи ГБО, ТНПА, Эхолота, толщиномера и т.д.
+														</li>
+
+														<li class="page-item__list-item">
+															Водолазное сопровождение строительства гидросооружений.
+														</li>
+
+														<li class="page-item__list-item">
+															Дноуглубительные, дноочистные работы.
+														</li>
+
+														<li class="page-item__list-item">
+															Подводное бетонирование, в том числе ремонт бетонных поверхностей ГТС в зоне переменного
+															уровня воды
+														</li>
+
+														<li class="page-item__list-item">
+															Тщательное и весьма тщательное равнение постелей.
+														</li>
+
+														<li class="page-item__list-item">
+															Монтаж и демонтаж различных конструкций под водой.
+														</li>
+
+														<li class="page-item__list-item">
+															Пробивка окон в каменных и бетонных поверхностях.
+														</li>
+
+														<li class="page-item__list-item">
+															Подъём из под воды различных предметов: бревен; топляков и т.д.
+														</li>
+
+														<li class="page-item__list-item">
+															Очистка акваторий от мусора и наносов грунта.
+														</li>
+
+														<li class="page-item__list-item">
+															Очистка колодцев, ёмкостей, отстойников от отложений.
+														</li>
+
+														<li class="page-item__list-item">
+															Прокладка дюкеров и кабелей, устранение провисов и размывов.
+														</li>
+
+														<li class="page-item__list-item">
+															Подводная сварка и резка металла.
+														</li>
+
+														<li class="page-item__list-item">
+															Подводная фото – видеосъёмка.
+														</li>
+
+														<li class="page-item__list-item">
+															Берегоукрепление и дноукрепление с использованием габионных конструкций и матов Рено.
+														</li>
+
+													</ul>
+
+												</div>
+
+												<div class="page-item__content-media uk-width-1-3@m">
+													<img class="page-item__content-img uk-width" src="img/Energy-complex-2.png"
+														alt="схема гидро-турбины">
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section id="item-sertificates" class="page-item">
+								<div class="page-item__bg">
+									<div class="page-item__body u-container">
+										<div class="page-item__content">
+											<h2 class="page-item__title">
+												Сертификаты и допуски
+											</h2>
+
+											<ul class="page-item__list page-item--multicol-2 page-item__list--unstyled">
+
+												<li class="page-item__list-item" v-for="(item, index) in certificates" :key="item">
+													<h3 class="page-item__subtitle tg-base--weak">
+														{{ item.type }}
+													</h3>
+													<p>
+														{{ item.description }}
+													</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section id="item-contacts" class="page-item">
+								<div class="page-item__bg">
+									<div class="page-item__body u-container">
+										<div class="page-item__content">
+
+											<h2 class="page-item__title">
+												Контакты 
+											</h2>
+
+											<p class="page-item__text u-text--upcase u-text--limit u-mb-2">
+												Общество с ограниченной ответственностью
+												<br>
+												«Управление подводно–технических работ» (ООО «УПТР»)
+											</p>
+
+											<ul class="page-item__list page-item--multicol-3 page-item__list--unstyled">
+
+												<li class="page-item__list-item">
+													<h3 class="page-item__subtitle tg-base--strong u-text--upcase">
+														Адрес
+													</h3>
+													<p class="tg-base--strong">
+														404130, Волгоградская область, город Волжский, проспект Металлургов, к.3.
+													</p>
+												</li>
+
+												<li class="page-item__list-item">
+													<h3 class="page-item__subtitle tg-base--strong u-text--upcase">
+														Телефон
+													</h3>
+													<ul class="page-item__list page-item__list--unstyled">
+														<li>
+															<p class="u-mb-0">
+																Директор - 
+																<br>Сангалов Олег Николаевич
+															</p>
+															<a href="tel:+79375464047" class="u-btn u-btn--text-base u-text--upcase">
+																+7 (937) 546-40-47
+															</a>
+														</li>
+														<li>
+															<p class="u-mb-0">
+																Заместитель директора - 
+																<br>Овченков Андрей Егорович
+															</p>
+															<a href="tel:+79370988457" class="u-btn u-btn--text-base u-text--upcase">
+																+7 (937) 098-84-57
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="page-item__list-item">
+													<h3 class="page-item__subtitle tg-base--strong u-text--upcase">
+														E-Mail
+													</h3>
+													<ul class="page-item__list page-item__list--unstyled">
+														<li>
+															<a href="mailto:uptr@yandex.ru" class="u-btn u-btn--text-base u-text--upcase">
+																uptr@yandex.ru
+															</a>
+														</li>
+														<li>
+															<a href="mailto:ooo_uptr@mail.ru" class="u-btn u-btn--text-base u-text--upcase">
+																ooo_uptr@mail.ru
+															</a>
+														</li>
+													</ul>
+
+												</li>
+
+											</ul>
+
+										</div>
+									</div>
+								</div>
+							</section>
+
+						</div>
+						<!--/.page-body-->
+
+					</div>
+					<!--/.page-content-->
+
+				</div>
+				<!--/.page-->
+
+			</div>
+			<!--/.site-content-->
+
+		</main>
+		<!--/.site-body-->
+
+
+		<footer class="site__footer">
+			<div class="site-footer__content u-container">
+
+				<section class="site-footer__item">
+					<div class="site-footer__img-box">
+						<img class="site-footer__logo" src="img/footer__logo.svg" alt="UPTR logotype">
+						<img class="site-footer__label" src="img/footer__UPTR.svg" alt="UPTR label">
+					</div>
+				</section>
+
+				<section class="site-footer__item">
+					<h2 class="site-footer__title tg-base--strong">
+						Документы
+					</h2>
+					<nav class="site-footer__menu">
+						<a href="#modal-user" class="site-footer__menu-link u-btn u-btn--text-base" uk-toggle>
+							Пользовательское соглашение
+						</a>
+					</nav>
+				</section>
+
+				<section class="site-footer__item">
+					<div class="site-footer__item-unit">
+						<h2 class="site-footer__title tg-base--strong">
+							Copyright
+						</h2>
+						<p class="site-footer__item-text tg-base--strong u-mb-0">
+							{{ new Date().getFullYear() }}. ООО «УПТР»
+						</p>
+					</div>
+					<div class="site-footer__item-unit">
+						<h2 class="site-footer__title tg-base--strong">
+							Designed&created
+						</h2>
+						<a href="mailto:maratabramson@gmail.com" class="site-footer__img-box">
+							<img src="img/Studioma-logo.svg" alt="Studioma dev.bureau logotype">
+						</a>
+					</div>
+				</section>
+			</div>
+		</footer>
+		<!--/.site__footer-->
+
+	</div>
+	<!--/.site-->
+
+	<!-- OVERLAYS -->
+	<div id="mob-menu" class="uk-modal-full uk-hidden@m" uk-modal>
+		<div class="uk-modal-dialog uk-height-1-1">
+			<button class="site-header__mobile-nav-btn uk-modal-close-full" type="button" uk-close>
+				<svg class="u-btn__icon" width="40" height="40">
+					<use xlink:href="img/icons/menu.svg#icon-menu"></use>
+				</svg>
+			</button>
+			<div class="mob-site__nav-content uk-grid-collapse uk-flex-middle" uk-grid>
+				<nav class="mob-site__nav">
+					<ul class="mob-site__menu">
+						<li class="mob-site__menu-item">
+							<a href="#item-about" class="mob-site__menu-link uk-modal-close" uk-scroll>
+								О нас
+							</a>
+						</li>
+						<li class="mob-site__menu-item">
+							<a href="#item-services" class="mob-site__menu-link uk-modal-close" uk-scroll>
+								Услуги
+							</a>
+						</li>
+						<li class="mob-site__menu-item">
+							<a href="#item-sertificates" class="mob-site__menu-link uk-modal-close" uk-scroll>
+								Сертификаты
+							</a>
+						</li>
+						<li class="mob-site__menu-item">
+							<a href="#item-contacts" class="mob-site__menu-link uk-modal-close" uk-scroll>
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<ul class="mob-site__contacts">
+						<li class="mob-site__contacts-item">
+							<a href="mailto:uptr@yandex.ru" class="mob-site__contacts-link">
+								uptr@yandex.ru
+							</a>
+						</li>
+						<li class="mob-site__contacts-item">
+							<a href="tel:+79375464047" class="mob-site__contacts-link">
+								+7 (937) 546-40-47
+							</a>
+						</li>
+						<li class="mob-site__contacts-item">
+							<a href="mailto:ooo_uptr@mail.ru" class="mob-site__contacts-link">
+								ooo_uptr@mail.ru
+							</a>
+						</li>
+						<li class="mob-site__contacts-item">
+							<a href="tel:+79370988457" class="mob-site__contacts-link">
+								+7 (937) 098-84-57
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-user" uk-modal>
+    <div class="uk-modal-dialog">
+
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+
+			<div class="uk-modal-header">
+				<h2 class="tg-base--strong u-mb-0">
+					Пользовательское соглашение
+				</h2>
+			</div>
+
+			<div class="uk-modal-body" uk-overflow-auto>
+
+					<div class="documents__content">
+						<p>
+							Настоящее Пользовательское Соглашение (Далее Соглашение) регулирует отношения между ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+							«УПРАВЛЕНИЕ ПОДВОДНО–ТЕХНИЧЕСКИХ РАБОТ» (далее UPTR.PRO или Администрация) с одной стороны и
+							пользователем сайта с другой.
+						</p>
+
+						<p>
+							Сайт UPTR.PRO не является средством массовой информации
+						</p>
+
+						<p>
+							Используя сайт, Вы соглашаетесь с условиями данного соглашения.
+							Если Вы не согласны с условиями данного соглашения, не используйте сайт UPTR.PRO!
+						</p>
+
+						<h3 class="tg-base--strong u-mb-0">
+							Права и обязанности сторон
+						</h3>
+
+						<h4 class="tg-base--strong u-mb-0">Пользователь имеет право:</h4>
+						<ul class="u-mt-0">
+							<li>
+								осуществлять поиск информации на сайте
+							</li>
+							<li>
+								получать информацию на сайте
+							</li>
+							<li>
+								копировать информацию на другие сайты с указанием источника
+							</li>
+							<li>
+								использовать информацию сайта в личных некоммерческих целях
+							</li>
+						</ul>
+
+						<h4 class="tg-base--strong u-mb-0">Администрация имеет право:</h4>
+						<ul class="u-mt-0">
+							<li>
+								по своему усмотрению и необходимости создавать, изменять, отменять правила
+							</li>
+							<li>
+								ограничивать доступ к любой информации на сайте
+							</li>
+							<li>
+								создавать, изменять, удалять информацию
+							</li>
+						</ul>
+
+						<h3 class="tg-base--strong u-mb-0">Пользователь обязуется:</h3>
+						<ul class="u-mt-0">
+							<li>
+								не нарушать работоспособность сайта
+							</li>
+							<li>
+								не использовать скрипты (программы) для автоматизированного сбора информации и/или
+								взаимодействия с Сайтом и его Сервисами
+							</li>
+						</ul>
+
+						<h3 class="tg-base--strong u-mb-0">Администрация обязуется:</h3>
+						<ul class="u-mt-0">
+							<li>
+								поддерживать работоспособность сайта за исключением случаев, когда это невозможно по
+								независящим от Администрации причинам.
+							</li>
+						</ul>
+
+						<h3 class="tg-base--strong u-mb-0">Ответственность сторон</h3>
+						<ul class="u-mt-0">
+							<li>
+								администрация не несет никакой ответственности за услуги, предоставляемые третьими лицами
+							</li>
+							<li>
+								в случае возникновения форс-мажорной ситуации (боевые действия, чрезвычайное положение,
+								стихийное бедствие и т. д.) Администрация не гарантирует сохранность информации, размещённой
+								Пользователем, а также бесперебойную работу информационного ресурса
+							</li>
+						</ul>
+
+						<h4 class="tg-base--strong u-mb-0">Условия действия Соглашения</h4>
+						<p>Данное Соглашение вступает в силу при любом использовании данного сайта.</p>
+						<p>Соглашение перестает действовать при появлении его новой версии.</p>
+						<p>
+							Администрация оставляет за собой право в одностороннем порядке изменять данное соглашение по
+							своему усмотрению.
+							Администрация не оповещает пользователей об изменении в Соглашении.
+						</p>
+					</div>
+
+			</div>
+
+			<div class="uk-modal-footer uk-text-right">
+					<button class="uk-button uk-button-default uk-modal-close" type="button">Понятно!</button>
+			</div>
+
     </div>
-  </footer>
-  <!--/.site__footer-->
+	</div>
 
-  </div>
-  <!--/.site-->
+	<a href="#top" uk-totop uk-scroll class="u-scroll-top" title="на верх"></a>
+	<!-- /OVERLAYS -->
 
-  <!-- OVERLAYS -->
-  <div id="mob-menu" class="uk-modal-full uk-hidden@m" uk-modal>
-    <div class="uk-modal-dialog uk-height-1-1">
-      <button class="site-header__mobile-nav-btn uk-modal-close-full" type="button" uk-close>
-        <svg class="u-btn__icon" width="40" height="40">
-          <use xlink:href="img/icons/menu.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <div class="mob-site__nav-content uk-grid-collapse uk-flex-middle" uk-grid>
-        <nav class="mob-site__nav">
-          <ul class="mob-site__menu">
-            <li class="mob-site__menu-item">
-              <a href="#item-about" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                О нас
-              </a>
-            </li>
-            <li class="mob-site__menu-item">
-              <a href="#item-services" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                Услуги
-              </a>
-            </li>
-            <li class="mob-site__menu-item">
-              <a href="#item-sertificates" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                Сертификаты
-              </a>
-            </li>
-            <li class="mob-site__menu-item">
-              <a href="#item-contacts" class="mob-site__menu-link uk-modal-close" uk-scroll>
-                Контакты
-              </a>
-            </li>
-          </ul>
-          <ul class="mob-site__contacts">
-            <li class="mob-site__contacts-item">
-              <a href="mailto:uptr@yandex.ru" class="mob-site__contacts-link">
-                uptr@yandex.ru
-              </a>
-            </li>
-            <li class="mob-site__contacts-item">
-              <a href="tel:+79375464047" class="mob-site__contacts-link">
-                +7 (937) 546-40-47
-              </a>
-            </li>
-            <li class="mob-site__contacts-item">
-              <a href="mailto:ooo_uptr@mail.ru" class="mob-site__contacts-link">
-                ooo_uptr@mail.ru
-              </a>
-            </li>
-            <li class="mob-site__contacts-item">
-              <a href="tel:+79370988457" class="mob-site__contacts-link">
-                +7 (937) 098-84-57
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <a href="#top" uk-totop uk-scroll class="u-scroll-top" title="на верх"></a>
-  <!-- /OVERLAYS -->
-
-  <!--SCRIPTS-->
-  <script>
-    var util = UIkit.util;
-    window.addEventListener("scroll", function () {
-      var totop = util.$("a.uk-totop");
-      if (window.pageYOffset > window.innerHeight) {
-        util.addClass(totop, "uk-active");
-      } else {
-        util.removeClass(totop, "uk-active");
-      }
-    }, false);
-  </script>
-  <!--/SCRIPTS-->
+	<!--SCRIPTS-->
+	<script>
+		var util = UIkit.util;
+		window.addEventListener("scroll", function () {
+			var totop = util.$("a.uk-totop");
+			if (window.pageYOffset > window.innerHeight) {
+				util.addClass(totop, "uk-active");
+			} else {
+				util.removeClass(totop, "uk-active");
+			}
+		}, false);
+	</script>
+	<!--/SCRIPTS-->
 
 </body>
 
